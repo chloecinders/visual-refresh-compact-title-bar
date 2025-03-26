@@ -2,7 +2,7 @@
     div.subtitleContainer_f75fb0,
     main.container__133bf {
         & > section.container__9293f {
-            padding-right: 182px;
+            padding-right: var(--vr-header-snippet-space);
         }
     }
 
@@ -23,7 +23,7 @@
             & div.subtitleContainer_f75fb0,
             & main.container__133bf {
                 & > section.container__9293f {
-                    padding-right: 230px;
+                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
                 }
             }
         }
@@ -53,7 +53,7 @@
     }
 
     ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
-        margin-top: 16px;
+        margin-top: var(--vr-header-snippet-server-padding);
     }
 
     div.topic__6ec1a {

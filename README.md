@@ -34,8 +34,19 @@ Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some be
 :root {
     /* controls the vertical position of the window buttons */
     --vr-header-snippet-top: 0px;
+    /* controls the space above the server list */
+    --vr-header-snippet-server-padding: 16px;
+    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
+    --vr-header-snippet-space: 180px;
 }
 ```
+### --vr-header-snippet-space cheat sheet
+Try these if you dont want to find out the spacing yourself!
+
+- Desktop Default: 180px
+- Desktop Spacious UI Scaling: 200px
+- Browser Default: 85px
+
 
 ## Known issues
 - [x] FIXED - Color for the window buttons background is wrong for some themes (including official Discord themes!)

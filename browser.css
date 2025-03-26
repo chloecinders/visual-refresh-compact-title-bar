@@ -2,7 +2,7 @@
     div[class^="subtitleContainer_"],
     main.container__133bf {
         & > section.container__9293f {
-            padding-right: 86px;
+            padding-right: var(--vr-header-snippet-space);
         }
     }
 
@@ -44,6 +44,6 @@
     }
 
     ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
-        margin-top: 16px;
+        margin-top: var(--vr-header-snippet-server-padding);
     }
 }
