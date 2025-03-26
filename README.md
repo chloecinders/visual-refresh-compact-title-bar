@@ -45,10 +45,10 @@ Try these if you dont want to find out the spacing yourself!
 
 - Desktop Default: 180px
 - Desktop Spacious UI Scaling: 200px
-- Browser Default: 85px
+- Browser: 85px
 
 
 ## Known issues
 - [x] FIXED - Color for the window buttons background is wrong for some themes (including official Discord themes!)
-- [ ] Breaks completely on some clients (I have yet to find out the cause of this)
-- [ ] Gaps when using a UI spacing other than default
+- [x] FIXED - Breaks completely on some clients (I have yet to find out the cause of this)
+- [X] FIXED - Please use the config! - Gaps when using a UI spacing other than default
