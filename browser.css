@@ -19,7 +19,7 @@
     div.base_c48ade {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 
-        & > div[class^="bar_"] {
+        & > div.bar_c38106 {
             position: absolute;
             position-anchor: --vr-header-snippet;
             top: var(--vr-header-snippet-top);
