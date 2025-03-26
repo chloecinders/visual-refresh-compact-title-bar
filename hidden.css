@@ -7,7 +7,7 @@
     }
   }
 
-  ul[data-list-id="guildsnav"] > div[class^="itemsContainer_"] {
+  ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 {
     margin-top: var(--vr-header-snippet-server-padding);
   }
 }
