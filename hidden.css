@@ -1,7 +1,7 @@
 .visual-refresh {
   --custom-app-top-bar-height: 0 !important;
 
-  div[class^="base_"] {
+  div.base_c48ade {
     & > div.bar_c38106 {
       display: none;
     }
