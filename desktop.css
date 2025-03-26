@@ -15,7 +15,7 @@
     }
 
     div.base_c48ade {
-        grid-template-rows: auto;
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 
         &:has(div.bar_c38106 > div.trailing_c38106 > *:nth-child(3)) {
             & div.subtitleContainer_f75fb0,

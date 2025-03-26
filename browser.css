@@ -15,7 +15,7 @@
     }
 
     div.base_c48ade {
-        grid-template-rows: auto;
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 
         & > div[class^="bar_"] {
             position: absolute;
