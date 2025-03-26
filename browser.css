@@ -1,4 +1,11 @@
 .visual-refresh {
+    /* controls the vertical position of the window buttons */
+    --vr-header-snippet-top: 0px;
+    /* controls the space above the server list */
+    --vr-header-snippet-server-padding: 16px;
+    /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
+    --vr-header-snippet-space: 180px;
+
     div[class^="subtitleContainer_"],
     main.container__133bf {
         & > section.container__9293f {
@@ -35,6 +42,10 @@
         }
 
         & > div.content_c48ade {
+            z-index: 0;
+        }
+
+        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
             z-index: 0;
         }
     }
