@@ -28,7 +28,16 @@ https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/ref
 
 Alternatively if your client does not support online themes you can download one of the theme files found in this repository and put them into your theme folder.
 
+## Config
+Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some behavior of this theme:
+```css
+:root {
+    /* controls the vertical position of the window buttons */
+    --vr-header-snippet-top: 0px;
+}
+```
+
 ## Known issues
-- Color for the window buttons background is wrong for some themes (including official Discord themes!)
-- Breaks completely on some clients (I have yet to find out the cause of this)
-- Gaps when using a UI spacing other than default
+- [x] FIXED - Color for the window buttons background is wrong for some themes (including official Discord themes!)
+- [ ] Breaks completely on some clients (I have yet to find out the cause of this)
+- [ ] Gaps when using a UI spacing other than default

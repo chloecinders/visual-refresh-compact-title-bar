@@ -22,7 +22,7 @@
         & > div[class^="bar_"] {
             position: absolute;
             position-anchor: --vr-header-snippet;
-            top: 0;
+            top: var(--vr-header-snippet-top);
             right: anchor(right);
             width: anchor-size(width);
             padding: 0;
