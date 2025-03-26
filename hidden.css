@@ -1,13 +1,13 @@
 .visual-refresh {
-    div[class^="base_"] {
-        grid-template-rows: auto;
+  --custom-app-top-bar-height: 0 !important;
 
-        & > div[class^="bar_"] {
-            display: none;
-        }
+  div[class^="base_"] {
+    & > div[class^="bar_"] {
+      display: none;
     }
+  }
 
-    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 {
-        margin-top: 16px;
-    }
+  ul[data-list-id="guildsnav"] > div[class^="itemsContainer_"] {
+    margin-top: 8px;
+  }
 }
