@@ -2,7 +2,7 @@
   --custom-app-top-bar-height: 0 !important;
 
   div[class^="base_"] {
-    & > div[class^="bar_"] {
+    & > div.bar_c38106 {
       display: none;
     }
   }
