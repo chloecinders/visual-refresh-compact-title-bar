@@ -1,4 +1,8 @@
 .visual-refresh {
+    --vr-header-snippet-top: 0px;
+    --vr-header-snippet-server-padding: 16px;
+    --vr-header-snippet-space: 180px;
+
     div.subtitleContainer_f75fb0,
     main.container__133bf {
         & > section.container__9293f {

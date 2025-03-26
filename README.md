@@ -33,11 +33,11 @@ Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some be
 ```css
 :root {
     /* controls the vertical position of the window buttons */
-    --vr-header-snippet-top: 0px;
+    --vr-header-snippet-top: 0px !important;
     /* controls the space above the server list */
-    --vr-header-snippet-server-padding: 16px;
+    --vr-header-snippet-server-padding: 16px !important;
     /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 180px;
+    --vr-header-snippet-space: 180px !important;
 }
 ```
 ### --vr-header-snippet-space cheat sheet
