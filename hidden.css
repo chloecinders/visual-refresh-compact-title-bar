@@ -8,6 +8,6 @@
   }
 
   ul[data-list-id="guildsnav"] > div[class^="itemsContainer_"] {
-    margin-top: 8px;
+    margin-top: var(--vr-header-snippet-server-padding);
   }
 }
