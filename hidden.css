@@ -1,0 +1,13 @@
+.visual-refresh {
+    div[class^="base_"] {
+        grid-template-rows: auto;
+
+        & > div[class^="bar_"] {
+            display: none;
+        }
+    }
+
+    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 {
+        margin-top: 16px;
+    }
+}
