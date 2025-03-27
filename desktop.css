@@ -24,7 +24,11 @@
     div.base_c48ade {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
 
-        &:has(div.bar_c38106 > div.trailing_c38106 > .clickable__9293f) {
+        &:has(
+                div.bar_c38106
+                    > div.trailing_c38106
+                    .updateIconForeground__49676
+            ) {
             & div.subtitleContainer_f75fb0,
             & main.container__133bf,
             & div.chatLayerWrapper__01ae2 {
