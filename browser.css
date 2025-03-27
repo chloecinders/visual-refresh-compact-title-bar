@@ -3,7 +3,8 @@
     --vr-header-snippet-server-padding: 16px;
     --vr-header-snippet-space: 85px;
 
-    div[class^="subtitleContainer_"],
+    div.subtitleContainer_f75fb0,
+    div.chat_f75fb0,
     main.container__133bf,
     div.chatLayerWrapper__01ae2 {
         & section.container__9293f {
