@@ -69,14 +69,6 @@
             > .bar_c38106 {
             z-index: 0;
         }
-
-        & div.videoControls_bfe55a .topControls_bfe55a {
-            -webkit-app-region: no-drag;
-
-            div.toolbar__9293f {
-                margin-right: var(--vr-header-snippet-space);
-            }
-        }
     }
 
     :not(:has(div.page_c48ade > div.chat_f75fb0))
@@ -91,6 +83,7 @@
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
+    & div.videoControls_bfe55a .topControls_bfe55a,
     section.header__0b563 div.toolbar__9293f,
     div.topic__6ec1a {
         -webkit-app-region: no-drag;
