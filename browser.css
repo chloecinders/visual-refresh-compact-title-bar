@@ -32,6 +32,16 @@
             right: anchor(right);
             width: anchor-size(width);
             padding: 0;
+
+            & > .title_c38106 {
+                display: none;
+            }
+        }
+
+        &:has(> .notice__6e2b9) {
+            & > div.bar_c38106 {
+                top: anchor(top);
+            }
         }
 
         & div.trailing_c38106 {
