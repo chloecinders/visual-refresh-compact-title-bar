@@ -2,6 +2,7 @@
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
     --vr-header-snippet-space: 85px;
+    --vr-header-snippet-button-padding: 0;
 
     div.subtitleContainer_f75fb0,
     div.chat_f75fb0,
@@ -23,7 +24,7 @@
     }
 
     div.base_c48ade {
-        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         & > div.bar_c38106 {
             position: absolute;
@@ -31,7 +32,7 @@
             top: var(--vr-header-snippet-top);
             right: anchor(right);
             width: anchor-size(width);
-            padding: 0;
+            padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
             & > .title_c38106 {
                 display: none;

@@ -38,6 +38,8 @@ Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some be
     --vr-header-snippet-server-padding: 16px !important;
     /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
     --vr-header-snippet-space: 180px !important;
+    /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
+    --vr-header-snippet-button-padding: 0 !important;
 }
 ```
 ### --vr-header-snippet-space cheat sheet
@@ -46,9 +48,3 @@ Try these if you dont want to find out the spacing yourself!
 - Desktop Default: 180px
 - Desktop Spacious UI Scaling: 200px
 - Browser: 85px
-
-
-## Known issues
-- [x] FIXED - Color for the window buttons background is wrong for some themes (including official Discord themes!)
-- [x] FIXED - Breaks completely on some clients (I have yet to find out the cause of this)
-- [X] FIXED - Please use the config! - Gaps when using a UI spacing other than default
