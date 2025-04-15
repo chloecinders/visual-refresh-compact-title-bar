@@ -1,13 +1,16 @@
 .visual-refresh {
-  --custom-app-top-bar-height: 0 !important;
+    --vr-header-snippet-server-padding: 16px;
+    --custom-app-top-bar-height: 0 !important;
 
-  div.base_c48ade {
-    & > div.bar_c38106 {
-      display: none;
+    div.base_c48ade {
+        & > div.bar_c38106 {
+            display: none;
+        }
     }
-  }
 
-  ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 {
-    margin-top: var(--vr-header-snippet-server-padding);
-  }
+    ul[data-list-id="guildsnav"]
+        > div.itemsContainer_ef3116
+        > div.stack_dbd263 {
+        margin-top: var(--vr-header-snippet-server-padding);
+    }
 }
