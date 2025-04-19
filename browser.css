@@ -1,8 +1,8 @@
 .visual-refresh {
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
-    --vr-header-snippet-space: 85px;
-    --vr-header-snippet-button-padding: 0;
+    --vr-header-snippet-space: 100px;
+    --vr-header-snippet-button-padding: 10px;
 
     div.subtitleContainer_f75fb0,
     div.chat_f75fb0,
