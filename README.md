@@ -37,7 +37,7 @@ Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some be
     /* controls the space above the server list */
     --vr-header-snippet-server-padding: 16px !important;
     /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 230px !important;> 8bf8e7cf6f0cc2b73e385b153edf480c0e8f30c6
+    --vr-header-snippet-space: 230px !important;
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
 }
