@@ -1,3 +1,31 @@
+.base_c48ade > .bar_c38106 > .leading_c38106::before,
+.base_c48ade > .bar_c38106 > .leading_c38106::after {
+  content: inherit;
+}
+
+#window-controls-filler {
+width: 126px;
+height: 36px;
+}
+
+#window-title {
+display: none;
+}
+
+#window-controls-container {
+width: 126px;
+height: 24px;
+top: 12px;
+right: -2px;
+}
+
+#window-controls-container {
+border-left: 1px solid var(--border-subtle);
+content: "";
+display: block;
+margin-inline:var(--space-5);
+}
+
 .visual-refresh {
   --vr-header-snippet-top: 0px;
   --vr-header-snippet-server-padding: 16px;
