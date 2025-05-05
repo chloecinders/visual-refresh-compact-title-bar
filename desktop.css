@@ -103,6 +103,8 @@
   }
 
   section.header__0b563 div.toolbar__9293f,
+  section.header_c791b2 div.toolbar__9293f,
+  section.header_c791b2 div.children__9293f,
   :not(.videoControls_bfe55a) div.topic__6ec1a {
     -webkit-app-region: no-drag;
   }
