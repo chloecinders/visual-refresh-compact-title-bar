@@ -14,16 +14,16 @@ Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod
 
 Paste the following link into your online theme links:
 ```
-https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css
+https://surgedevs.github.io/visual-refresh-compact-title-bar/desktop.css
 ```
 
 **If you are on a browser, Vesktop, or a client which does not come with window controls paste this instead:**
 ```
-https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/browser.css
+https://surgedevs.github.io/visual-refresh-compact-title-bar/browser.css
 ```
 If you are on browser/Vesktop and do not care about the the inbox button, just wanting a performant way to remove the title bar completely you can use this instead:
 ```
-https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/hidden.css
+https://surgedevs.github.io/visual-refresh-compact-title-bar/hidden.css
 ```
 
 Alternatively if your client does not support online themes you can download one of the theme files found in this repository and put them into your theme folder.
@@ -48,3 +48,4 @@ Try these if you dont want to find out the spacing yourself!
 - Desktop Default: 180px
 - Desktop Spacious UI Scaling: 200px
 - Browser: 85px
+
