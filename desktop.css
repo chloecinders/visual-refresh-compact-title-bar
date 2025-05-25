@@ -4,7 +4,7 @@
   --vr-header-snippet-space: 230px;
   --vr-header-snippet-button-padding: 0;
 
-  div.chat_f75fb0:not(.threadSidebarOpen_f75fb0) div.subtitleContainer_f75fb0,
+  div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
   main.container__133bf,
   div.chatLayerWrapper__01ae2 {
     & section.container__9293f {
@@ -86,15 +86,12 @@
       height: var(--custom-channel-header-height);
     }
 
-    &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0)
-      > .bar_c38106 {
+    &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
       z-index: 0;
     }
   }
 
-  :not(:has(div.page_c48ade > div.chat_f75fb0))
-    div.base_c48ade
-    > div.bar_c38106 {
+  :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
     right: 0 !important;
   }
 
