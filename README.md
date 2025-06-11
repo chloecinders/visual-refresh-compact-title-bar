@@ -14,16 +14,16 @@ Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod
 
 Paste the following link into your online theme links:
 ```
-https://surgedevs.github.io/visual-refresh-compact-title-bar/desktop.css
+https://chloecinders.github.io/visual-refresh-compact-title-bar/desktop.css
 ```
 
 **If you are on a browser, Vesktop, or a client which does not come with window controls paste this instead:**
 ```
-https://surgedevs.github.io/visual-refresh-compact-title-bar/browser.css
+https://chloecinders.github.io/visual-refresh-compact-title-bar/browser.css
 ```
 If you are on browser/Vesktop and do not care about the the inbox button, just wanting a performant way to remove the title bar completely you can use this instead:
 ```
-https://surgedevs.github.io/visual-refresh-compact-title-bar/hidden.css
+https://chloecinders.github.io/visual-refresh-compact-title-bar/hidden.css
 ```
 
 Alternatively if your client does not support online themes you can download one of the theme files found in this repository and put them into your theme folder.
