@@ -3,6 +3,7 @@
   --vr-header-snippet-server-padding: 16px;
   --vr-header-snippet-space: 230px;
   --vr-header-snippet-button-padding: 0;
+  --vr-header-snippet-winbuttons: flex;
 
   div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
   main.container__133bf,
@@ -37,6 +38,10 @@
     & > div.chat_f75fb0 {
       anchor-name: --vr-header-snippet;
     }
+  }
+
+  .winButtons_c38106 {
+    display: var(--vr-header-snippet-winbuttons);
   }
 
   div.base_c48ade {

@@ -40,6 +40,8 @@ Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some be
     --vr-header-snippet-space: 230px !important;
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
     --vr-header-snippet-button-padding: 0 !important;
+    /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
+    --vr-header-snippet-winbuttons: flex !important;
 }
 ```
 ### --vr-header-snippet-space cheat sheet
