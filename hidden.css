@@ -1,9 +1,9 @@
 @import url("https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css");
 
 .visual-refresh {
-  --vr-header-snippet-space: -40px;
+    --vr-header-snippet-space: -40px;
 
-  div.bar_c38106 > * {
-    display: none !important;
-  }
+    div.bar_c38106 > * {
+        display: none !important;
+    }
 }
