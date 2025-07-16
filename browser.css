@@ -61,11 +61,24 @@
         right: 0 !important;
     }
 
-    section.showToolbar__9293f {
+    .shop__6db1d section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
 
         .balanceWidgetMenu__80679 {
             margin-right: 0;
+        }
+    }
+
+    .profileThemedContainer__656be .topRow__34940 {
+        align-items: end;
+        padding-bottom: 0;
+
+        & .closeAction__34940 {
+            -webkit-app-region: no-drag;
+        }
+
+        & .memberNameContainer__34940 {
+            padding-bottom: 12px;
         }
     }
 
