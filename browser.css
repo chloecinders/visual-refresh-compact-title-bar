@@ -62,7 +62,11 @@
     }
 
     section.showToolbar__9293f {
-        padding-right: calc(var(--vr-header-snippet-space) - 36px);
+        padding-right: var(--vr-header-snippet-space);
+
+        .balanceWidgetMenu__80679 {
+            margin-right: 0;
+        }
     }
 
     ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {

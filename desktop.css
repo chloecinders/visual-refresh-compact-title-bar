@@ -114,6 +114,10 @@
 
     section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
+
+        .balanceWidgetMenu__80679 {
+            margin-right: 0;
+        }
     }
 
     .div.videoControls_bfe55a .topControls_bfe55a {
