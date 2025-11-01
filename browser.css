@@ -20,7 +20,7 @@
         padding-right: calc(var(--vr-header-snippet-space) - 20px);
     }
 
-    div.base_c48ade {
+    div[class*='base_'] {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         & > div.bar_c38106 {
@@ -57,7 +57,7 @@
         }
     }
 
-    :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
+    :not(:has(div.page_c48ade > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
         right: 0 !important;
     }
 
