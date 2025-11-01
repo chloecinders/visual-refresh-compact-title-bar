@@ -48,7 +48,7 @@
             height: var(--custom-channel-header-height);
         }
 
-        & > div.content_c48ade {
+        & > div[class*='content__'] {
             z-index: 0;
         }
 
@@ -57,7 +57,7 @@
         }
     }
 
-    :not(:has(div.page_c48ade > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
+    :not(:has(div[class*='page__'] > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
         right: 0 !important;
     }
 
