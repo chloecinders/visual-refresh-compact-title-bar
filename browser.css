@@ -91,4 +91,37 @@
     ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
         margin-top: var(--vr-header-snippet-server-padding);
     }
+
+    /* search/wishlist/orbs on shop page */
+    .alignedRightContent__80679 {
+      position: fixed;
+      right: calc(var(--vr-header-snippet-space) - 36px);
+      -webkit-app-region: no-drag;
+    }
+
+    /* orbs balance on quests page */
+    .headerBarContent__1a9ce .container__44ee9 {
+      position: fixed;
+      right: var(--vr-header-snippet-space);
+      -webkit-app-region: no-drag;
+    }
+
+    /* vc open chat icon if update or vencord button is visible*/
+    .toolbar__49508 {
+      position: fixed;
+      top: 16px;
+      right: 0px;
+    }
+    
+    /* vc open chat icon if above isnt visible */
+    div.base__5e434:not(:has(vc-toolbox-btn)) {
+      .toolbar__49508 {
+        right: calc(var(--vr-header-snippet-space) - 12px);
+      }
+    }
+    
+    /* fix main thread button */
+    .titleWrapper__9293f {
+      -webkit-app-region: no-drag;
+    }
 }
