@@ -30,7 +30,7 @@
         }
     }
 
-    div.page_c48ade {
+    div.page__5e434 {
         &:not(:has(> div.chat_f75fb0)) {
             anchor-name: --vr-header-snippet;
         }
@@ -44,28 +44,39 @@
         display: var(--vr-header-snippet-winbuttons);
     }
 
-    div.base_c48ade {
+    div.base__5e434 {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
-        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
-            & div.chat_f75fb0,
-            & div.subtitleContainer_f75fb0,
-            & main.container__133bf,
-            & div.chatLayerWrapper__01ae2 {
-                & section.container__9293f {
-                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
-                }
+        /* check if users have update or vencord button */
+        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676),
+        &:has(.vc-toolbox-btn) {
+           & div.chat_f75fb0,
+           & div.subtitleContainer_f75fb0,
+           & main.container__133bf,
+           & div.chatLayerWrapper__01ae2 {
+             & section.container__9293f {
+                /* adds extra spacing to search bar on chatting pages*/
+               padding-right: calc(var(--vr-header-snippet-space) + 44px);
+             }
+           }
+
+            /* adds extra spacing to the orbs button on orbs page */
+            & div.container__44ee9 {
+              padding-right: +44px;
             }
 
+            /* frankly no idea what this does yet */
             & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
                 margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
             }
         }
 
-        & > div.content_c48ade {
+        /* moves element to "front" */
+        & > div.content__5e434 {
             z-index: 0;
         }
 
+        /* top bar variables */
         & > div.bar_c38106 {
             position: absolute;
             position-anchor: --vr-header-snippet;
@@ -79,24 +90,28 @@
             }
         }
 
+        /* no idea what this does */
         &:has(> .notice__6e2b9) {
             & > div.bar_c38106 {
                 top: anchor(top);
             }
         }
 
+        /* inbox, help, window buttons variables */
         & div.trailing_c38106 {
             background: none;
             border: none;
             height: var(--custom-channel-header-height);
         }
 
+        /* checks if a thread is opened on the side of your screen */
         &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
             z-index: 0;
         }
     }
 
-    :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
+    /* checks if discord is on a server page */
+    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
         right: 0 !important;
     }
 
