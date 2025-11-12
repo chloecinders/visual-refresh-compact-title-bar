@@ -174,7 +174,7 @@
     }
     
     /* vc open chat icon if above isnt visible */
-    div.base__5e434:not(:has(vc-toolbox-btn)) {
+    div.base__5e434:not(:has(vc-toolbox-btn)):not(:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676)) {
       .toolbar__49508 {
         right: calc(var(--vr-header-snippet-space) - 12px);
       }
