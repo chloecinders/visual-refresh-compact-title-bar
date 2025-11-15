@@ -180,8 +180,22 @@
       }
     }
     
-    /* fix main thread button */
+    /* allows main thread button to be clickable */
     .titleWrapper__9293f {
       -webkit-app-region: no-drag;
+    }
+
+    /* checks if you are searching for a server */
+    .container_d08938:has(.headerBar__8a7fc.relative__8a7fc) {
+      /* adds padding to search bar */
+      & .searchBar__1ac1c {
+        padding-right: calc(var(--vr-header-snippet-space) - 12px);
+        -webkit-app-region: no-drag;
+      }
+    
+      /* allows back button to be clickable */
+      & .iconButton__8a7fc {
+        -webkit-app-region: no-drag;
+      }
     }
 }
