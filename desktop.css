@@ -162,7 +162,7 @@
     /* orbs balance on quests page */
     .headerBarContent__1a9ce .container__44ee9 {
       position: fixed;
-      right: right: calc(var(--vr-header-snippet-space) + 3px);
+      right: calc(var(--vr-header-snippet-space) + 3px);
       -webkit-app-region: no-drag;
     }
 
