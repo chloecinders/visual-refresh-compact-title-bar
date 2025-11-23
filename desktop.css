@@ -155,14 +155,14 @@
     /* search/wishlist/orbs on shop page */
     .alignedRightContent__80679 {
       position: fixed;
-      right: calc(var(--vr-header-snippet-space) - 36px);
+      right: calc(var(--vr-header-snippet-space) - 33px);
       -webkit-app-region: no-drag;
     }
 
     /* orbs balance on quests page */
     .headerBarContent__1a9ce .container__44ee9 {
       position: fixed;
-      right: var(--vr-header-snippet-space);
+      right: right: calc(var(--vr-header-snippet-space) + 3px);
       -webkit-app-region: no-drag;
     }
 
