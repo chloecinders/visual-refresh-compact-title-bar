@@ -14,16 +14,16 @@ Use [Vencord](https://github.com/Vendicated/Vencord) or an equivalent client mod
 
 Paste the following link into your online theme links:
 ```
-https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/desktop.css
+https://chloecinders.github.io/visual-refresh-compact-title-bar/desktop.css
 ```
 
 **If you are on a browser, Vesktop, or a client which does not come with window controls paste this instead:**
 ```
-https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/browser.css
+https://chloecinders.github.io/visual-refresh-compact-title-bar/browser.css
 ```
 If you are on browser/Vesktop and do not care about the the inbox button, just wanting a performant way to remove the title bar completely you can use this instead:
 ```
-https://raw.githubusercontent.com/G0d0fninjas/visual-refresh-compact-title-bar/refs/heads/main/hidden.css
+https://chloecinders.github.io/visual-refresh-compact-title-bar/hidden.css
 ```
 
 Alternatively if your client does not support online themes you can download one of the theme files found in this repository and put them into your theme folder.
@@ -37,9 +37,9 @@ Put this into your QuickCSS (Or any non-Vencord equivalent) to configure some be
     /* controls the space above the server list */
     --vr-header-snippet-server-padding: 16px !important;
     /* controls the space the window buttons get on the channel header, experiment around with this if you get gaps or the buttons overlap! */
-    --vr-header-snippet-space: 225px !important;
+    --vr-header-snippet-space: 230px !important;
     /* controls the space to the right of the window buttons, good if you are using themes like midnight which add padding to the bar */
-    --vr-header-snippet-button-padding: 0px !important;
+    --vr-header-snippet-button-padding: 0 !important;
     /* !DESKTOP SNIPPET ONLY! If set to none instead of flex, hides the window control buttons */
     --vr-header-snippet-winbuttons: flex !important;
 }
