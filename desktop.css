@@ -120,6 +120,7 @@
                 /* adds padding to search bar */
                 .searchBar__1ac1c {
                     padding-right: 4px;
+                    -webkit-app-region: no-drag;
                 }
 
                 /* adds extra badding if you are looking at search results */
