@@ -34,7 +34,7 @@
         }
     }
 
-    div.page__5e434 {
+    div[class*='page__'] {
         &:not(:has(> div.chat_f75fb0)) {
             anchor-name: --vr-header-snippet;
         }
@@ -49,7 +49,7 @@
         display: var(--vr-header-snippet-winbuttons);
     }
 
-    div.base__5e434 {
+    div[class*='base_'] {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have update or vencord button */
@@ -70,7 +70,6 @@
                 padding-right: +44px;
             }
 
-            /* no idea what this does */
             & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
                 margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
             }
@@ -133,7 +132,7 @@
         }
 
         /* moves element to "front" */
-        & > div.content__5e434 {
+        & > div[class*='content__'] {
             z-index: 0;
         }
 
@@ -152,7 +151,6 @@
             }
         }
 
-        /* no idea what this does */
         &:has(> .notice__6e2b9) {
             & > div.bar_c38106 {
                 top: anchor(top);
@@ -173,7 +171,7 @@
     }
 
     /* checks if discord is on a server page */
-    :not(:has(div.page__5e434 > div.chat_f75fb0)) div.base__5e434 > div.bar_c38106 {
+    :not(:has(div[class*='page__'] > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
         right: 0 !important;
     }
 
@@ -201,7 +199,6 @@
         }
     }
 
-    /* no idea what this does */
     .div.videoControls_bfe55a .topControls_bfe55a {
         z-index: -1;
     }
