@@ -245,9 +245,4 @@
         position: fixed;
         top: 57px;
     }
-
-    .upperContainer__9293f {
-      margin-right: calc(var(--vr-header-snippet-button-padding) + 200px);
-      -webkit-app-region: drag;
-    }
 }
