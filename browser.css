@@ -55,7 +55,7 @@
             .innerContainer_e1147e {
                 /* adds padding to search bar */
                 .searchBar__1ac1c {
-                padding-right: calc(var(--vr-header-snippet-space) - 52px);
+                    padding-right: 48px;;
                 }
 
                 /* adds extra badding if you are looking at search results */
