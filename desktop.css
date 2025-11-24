@@ -1,10 +1,12 @@
 .visual-refresh {
+    /* gives each variable a default */
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
     --vr-header-snippet-space: 230px;
     --vr-header-snippet-button-padding: 0;
     --vr-header-snippet-winbuttons: flex;
 
+    /* adds padding to all top containers */
     div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
     main.container__133bf,
     div.chatLayerWrapper__01ae2 {
@@ -13,6 +15,7 @@
         }
     }
 
+    /* adds padding to servers/app pages */
     div.headerBar__8a7fc.overlay__8a7fc {
         padding-right: var(--vr-header-snippet-space);
 
@@ -22,6 +25,7 @@
         }
     }
 
+    /* no idea what this does */
     div.videoControls_bfe55a div.subtitleContainer__49508 {
         padding-right: calc(var(--vr-header-snippet-space) - 20px);
 
@@ -40,6 +44,7 @@
         }
     }
 
+    /* shows or removes window buttons depending on variable */
     .winButtons_c38106 {
         display: var(--vr-header-snippet-winbuttons);
     }
@@ -56,18 +61,73 @@
            & div.chatLayerWrapper__01ae2 {
              & section.container__9293f {
                 /* adds extra spacing to search bar on chatting pages*/
-               padding-right: calc(var(--vr-header-snippet-space) + 44px);
+                padding-right: calc(var(--vr-header-snippet-space) + 44px);
              }
            }
 
-            /* adds extra spacing to the orbs button on orbs page */
+            /* adds extra spacing to the orbs button on orbs/shop page */
             & div.container__44ee9 {
-              padding-right: +44px;
+                padding-right: +44px;
             }
 
-            /* frankly no idea what this does yet */
+            /* no idea what this does */
             & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
                 margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
+            }
+
+            /* adds extra padding to chat icon on vc */
+            .toolbar__49508 {
+                position: fixed;
+                top: 16px;
+                right: 3px;
+            }
+
+            /* checks if you are searching for a server/app */
+            .container_d08938,
+            .innerContainer_e1147e {
+                /* adds padding to search bar */
+                .searchBar__1ac1c {
+                    padding-right: 48px;
+                    -webkit-app-region: no-drag;
+                }
+
+                /* adds extra badding if you are looking at search results */
+                &:has(.headerBar__8a7fc.relative__8a7fc) {
+                    .searchBar__1ac1c {
+                        padding-right: calc(var(--vr-header-snippet-space) + 32px);
+                    }
+                }
+
+                /* allows back button to be clickable */
+                & .iconButton__8a7fc {
+                    -webkit-app-region: no-drag;
+                }
+            }
+        }
+
+        /* checks if user isn't using vencord toolbox plugin */
+        &:not(:has(.vc-toolbox-btn)) {
+            /* adds padding to chat icon in vc */
+            .toolbar__49508 {
+                position: fixed;
+                top: 16px;
+                right: calc(var(--vr-header-snippet-space) - 11px);
+            }
+
+            /* checks if you are searching for a server/app */
+            .container_d08938,
+            .innerContainer_e1147e {
+                /* adds padding to search bar */
+                .searchBar__1ac1c {
+                    padding-right: 4px;
+                }
+
+                /* adds extra badding if you are looking at search results */
+                &:has(.headerBar__8a7fc.relative__8a7fc) {
+                    .searchBar__1ac1c {
+                        padding-right: calc(var(--vr-header-snippet-space) - 12px);
+                    }
+                }
             }
         }
 
@@ -85,6 +145,7 @@
             width: anchor-size(width);
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
+            /* removes the title bar */
             & > .title_c38106 {
                 display: none;
             }
@@ -115,10 +176,12 @@
         right: 0 !important;
     }
 
+    /* adds padding to server list */
     ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
         margin-top: var(--vr-header-snippet-server-padding);
     }
 
+    /* allows these areas to be clickable */
     section.headerBar__80679,
     section.header__0b563 div.toolbar__9293f,
     section.header_c791b2 div.toolbar__9293f,
@@ -127,6 +190,7 @@
         -webkit-app-region: no-drag;
     }
 
+    /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
     .shop__6db1d section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
 
@@ -135,6 +199,7 @@
         }
     }
 
+    /* no idea what this does */
     .div.videoControls_bfe55a .topControls_bfe55a {
         z-index: -1;
     }
@@ -165,37 +230,20 @@
       right: calc(var(--vr-header-snippet-space) + 3px);
       -webkit-app-region: no-drag;
     }
-
-    /* vc open chat icon if update or vencord button is visible*/
-    .toolbar__49508 {
-      position: fixed;
-      top: 16px;
-      right: 0px;
-    }
-    
-    /* vc open chat icon if above isnt visible */
-    div.base__5e434:not(:has(.vc-toolbox-btn)):not(:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676)) {
-      .toolbar__49508 {
-        right: calc(var(--vr-header-snippet-space) - 12px);
-      }
-    }
     
     /* allows main thread button to be clickable */
     .titleWrapper__9293f {
       -webkit-app-region: no-drag;
     }
 
-    /* checks if you are searching for a server */
-    .container_d08938:has(.headerBar__8a7fc.relative__8a7fc) {
-      /* adds padding to search bar */
-      & .searchBar__1ac1c {
-        padding-right: calc(var(--vr-header-snippet-space) - 12px);
-        -webkit-app-region: no-drag;
-      }
-    
-      /* allows back button to be clickable */
-      & .iconButton__8a7fc {
-        -webkit-app-region: no-drag;
-      }
+    /* fixes extra gap of group dm button on friends page */
+    .toolbar__9293f .inviteToolbar__133bf {
+        padding-right: 0px;
+    }
+
+    /* fixes weird padding issue when searching for an app */
+    .sideFilterContainer__1eae0 {
+        position: fixed;
+        top: 57px;
     }
 }
