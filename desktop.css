@@ -96,11 +96,6 @@
                         padding-right: calc(var(--vr-header-snippet-space) + 32px);
                     }
                 }
-
-                /* allows back button to be clickable */
-                & .iconButton__8a7fc {
-                    -webkit-app-region: no-drag;
-                }
             }
         }
 
@@ -181,11 +176,10 @@
     }
 
     /* allows these areas to be clickable */
-    section.headerBar__80679,
     section.header__0b563 div.toolbar__9293f,
     section.header_c791b2 div.toolbar__9293f,
     section.header_c791b2 div.children__9293f,
-    div.shopHomeLink__80679,
+    div.shop__6db1d div.shopHomeLink__80679,
     :not(.videoControls_bfe55a) div.topic__6ec1a {
         -webkit-app-region: no-drag;
     }
@@ -244,5 +238,10 @@
     .sideFilterContainer__1eae0 {
         position: fixed;
         top: 57px;
+    }
+
+    /* allows back button on discover pages to be clickable */
+    & .iconButton__8a7fc {
+        -webkit-app-region: no-drag;
     }
 }
