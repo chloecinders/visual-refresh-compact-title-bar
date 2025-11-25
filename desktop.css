@@ -224,7 +224,7 @@
       -webkit-app-region: no-drag;
     }
     
-    /* allows main thread button to be clickable */
+    /* allows main thread + all/claimed quest buttons to be clickable */
     .titleWrapper__9293f {
       -webkit-app-region: no-drag;
     }
