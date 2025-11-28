@@ -70,9 +70,10 @@
                 padding-right: +44px;
             }
 
-            & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
+            /* something in code changed so this is not needed anymore. needs further testing */
+            /* & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
                 margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
-            }
+            } */
 
             /* adds extra padding to chat icon on vc */
             .toolbar__49508 {
