@@ -64,6 +64,10 @@
 
         & > div[class*='content__'] {
             z-index: 0;
+			
+			& > div.sidebar__5e434 > div.sidebarListRounded__5e434 {
+				border-start-start-radius: 0 !important;
+			}
         }
 
         & > div.bar_c38106 {
