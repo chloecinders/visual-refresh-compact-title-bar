@@ -56,15 +56,28 @@
         &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676),
         &:has(.vc-toolbox-btn),
         &:has([aria-label='Checkpoint']) {
-           & div.chat_f75fb0,
-           & div.subtitleContainer_f75fb0,
-           & main.container__133bf,
-           & div.chatLayerWrapper__01ae2 {
-             & section.container__9293f {
-                /* adds extra spacing to search bar on chatting pages*/
+            & div.chat_f75fb0,
+            & div.subtitleContainer_f75fb0,
+            & main.container__133bf,
+            & div.chatLayerWrapper__01ae2 {
+                /* adds padding to entire top container */
+                & section.container__9293f {
                 padding-right: calc(var(--vr-header-snippet-space) + 44px);
-             }
-           }
+                }
+            }
+
+            /* checks if a thread is opened */
+            & :has(div.threadSidebarOpen_f75fb0) {
+                & div.chat_f75fb0,
+                & div.subtitleContainer_f75fb0,
+                & main.container__133bf,
+                & div.chatLayerWrapper__01ae2 {
+                    /* removes extra padding to search bar */
+                    & section.container__9293f:not(:has([aria-label='More'])) {
+                    padding-right: 8px;
+                    }
+                }
+            }
 
             /* adds extra spacing to the orbs button on orbs/shop page */
             & div.container__44ee9 {
