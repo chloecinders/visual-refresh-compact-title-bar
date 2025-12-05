@@ -6,6 +6,10 @@
     --vr-header-snippet-button-padding: 0;
     --vr-header-snippet-winbuttons: flex;
 
+    --update-padding: 0px;
+    --vencord-padding: 0px;
+    --checkpoint-padding: 0px;
+
     /* adds padding to all top containers */
     div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
     main.container__133bf,
@@ -53,87 +57,67 @@
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
-        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676),
-        &:has(.vc-toolbox-btn),
+        &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676) {
+            --update-padding: 44px;
+        }
+        &:has(div.bar_c38106 > div.trailing_c38106 .vc-toolbox-btn) {
+            --vencord-padding: 44px;
+        }
         &:has(div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
-            & div.subtitleContainer_f75fb0,
-            & main.container__133bf {
-                /* adds padding to entire top container */
-                & section.container__9293f {
-                    padding-right: calc(var(--vr-header-snippet-space) + 44px);
-                }
-            }
+            --checkpoint-padding: 44px;
+        }
 
-            /* checks if thread sidebar is open */
-            &:has(div > div.chatLayerWrapper__01ae2) {
-                /* removes extra padding given to search bar */
-                & div.subtitleContainer_f75fb0 > section.container__9293f {
-                    padding-right: 8px;
-                }
-
-                /* adds padding to the thread buttons */
-                & div.container__01ae2 > section.container__9293f {
-                    padding-right: calc(var(--vr-header-snippet-space) + 44px);
-                }
-            }
-
-            /* adds extra spacing to the orbs button on orbs/shop page */
-            & div.container__44ee9 {
-                padding-right: +44px;
-            }
-
-            & div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
-                margin-right: calc(var(--vr-header-snippet-space) + 30px) !important;
-            }
-
-            /* adds extra padding to chat icon on vc */
-            .toolbar__49508 {
-                position: fixed;
-                top: 16px;
-                right: 3px;
-            }
-
-            /* checks if you are searching for a server/app */
-            .container_d08938,
-            .innerContainer_e1147e {
-                /* adds padding to search bar */
-                .searchBar__1ac1c {
-                    padding-right: 48px;
-                    -webkit-app-region: no-drag;
-                }
-
-                /* adds extra badding if you are looking at search results */
-                &:has(.headerBar__8a7fc.relative__8a7fc) {
-                    .searchBar__1ac1c {
-                        padding-right: calc(var(--vr-header-snippet-space) + 32px);
-                    }
-                }
+        & div.subtitleContainer_f75fb0,
+        & main.container__133bf {
+            /* adds padding to entire top container */
+            & section.container__9293f {
+                padding-right: calc(var(--vr-header-snippet-space) + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
             }
         }
 
-        /* checks if user isn't using vencord toolbox plugin */
-        &:not(:has(.vc-toolbox-btn)) {
-            /* adds padding to chat icon in vc */
-            .toolbar__49508 {
-                position: fixed;
-                top: 16px;
-                right: calc(var(--vr-header-snippet-space) - 11px);
+        /* checks if thread sidebar is open */
+        &:has(div > div.chatLayerWrapper__01ae2) {
+            /* removes extra padding given to search bar */
+            & div.subtitleContainer_f75fb0 > section.container__9293f {
+                padding-right: 8px;
             }
 
-            /* checks if you are searching for a server/app */
-            .container_d08938,
-            .innerContainer_e1147e {
-                /* adds padding to search bar */
-                .searchBar__1ac1c {
-                    padding-right: 4px;
-                    -webkit-app-region: no-drag;
-                }
+            /* adds padding to the thread buttons */
+            & div.container__01ae2 > section.container__9293f {
+                padding-right: calc(var(--vr-header-snippet-space) + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
+            }
+        }
 
-                /* adds extra badding if you are looking at search results */
-                &:has(.headerBar__8a7fc.relative__8a7fc) {
-                    .searchBar__1ac1c {
-                        padding-right: calc(var(--vr-header-snippet-space) - 12px);
-                    }
+        /* adds extra spacing to the orbs button on orbs/shop page */
+        & div.container__44ee9 {
+            padding-right: calc(var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
+        }
+
+        /* livestream header on vc */
+        & div.callContainer_cb9592.fullScreen_cb9592 div.videoControls_bfe55a .topControls_bfe55a div.toolbar__9293f {
+            margin-right: -214px !important;
+        }
+
+        /* removes extra padding to chat icon on vc */
+        div.subtitleContainer__49508:has(button.button__201d5[aria-label='Show Chat']) {
+            margin-right: calc(-200px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding)) !important;
+        }
+
+        /* checks if you are searching for a server/app */
+        .container_d08938,
+        .innerContainer_e1147e {
+            /* adds padding to search bar */
+            div.search__1ac1c {
+                /* TODO: fix issue where doesnt let you search if window too small, or clicking search icon clips it into bar */
+                margin-right: calc(4px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
+                -webkit-app-region: no-drag;
+            }
+            
+
+            /* adds extra badding if you are looking at search results */
+            &:has(.headerBar__8a7fc.relative__8a7fc) {
+                .search__1ac1c {
+                    padding-right: calc(var(--vr-header-snippet-space) - 60px + var(--update-padding) + var(--vencord-padding) + var(--checkpoint-padding));
                 }
             }
         }
