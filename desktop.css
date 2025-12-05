@@ -55,14 +55,25 @@
         /* check if users have the update, vencord, or "checkpoint (discord recap) button */
         &:has(div.bar_c38106 > div.trailing_c38106 .updateIconForeground__49676),
         &:has(.vc-toolbox-btn),
-        &:has([aria-label='Checkpoint']) {
-            & div.chat_f75fb0,
+        &:has(div.bar_c38106 > div.trailing_c38106 path.iconForeground_f1f2b1) {
             & div.subtitleContainer_f75fb0,
-            & main.container__133bf,
-            & div.chatLayerWrapper__01ae2 {
+            & main.container__133bf {
                 /* adds padding to entire top container */
                 & section.container__9293f {
-                padding-right: calc(var(--vr-header-snippet-space) + 44px);
+                    padding-right: calc(var(--vr-header-snippet-space) + 44px);
+                }
+            }
+
+            /* checks if thread sidebar is open */
+            &:has(div > div.chatLayerWrapper__01ae2) {
+                /* removes extra padding given to search bar */
+                & div.subtitleContainer_f75fb0 > section.container__9293f {
+                    padding-right: 8px;
+                }
+
+                /* adds padding to the thread buttons */
+                & div.container__01ae2 > section.container__9293f {
+                    padding-right: calc(var(--vr-header-snippet-space) + 44px);
                 }
             }
 
