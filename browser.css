@@ -1,9 +1,11 @@
 .visual-refresh {
+    /* gives each variable a default */
     --vr-header-snippet-top: 0px;
     --vr-header-snippet-server-padding: 16px;
     --vr-header-snippet-space: 100px;
     --vr-header-snippet-button-padding: 10px;
 
+    /* adds padding to all top containers */
     div.chat_f75fb0:not(.threadSidebarOpen_f75fb0),
     main.container__133bf,
     div.chatLayerWrapper__01ae2 {
@@ -12,6 +14,7 @@
         }
     }
 
+    /* adds padding to servers/app pages */
     div.headerBar__8a7fc.overlay__8a7fc {
         padding-right: var(--vr-header-snippet-space);
     }
@@ -23,6 +26,78 @@
     div[class*='base_'] {
         grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [contentEnd] min-content [end];
 
+        /* checks if user is using vencord toolbox plugin */
+        &:has(.vc-toolbox-btn) {
+            & div.chat_f75fb0,
+            & div.subtitleContainer_f75fb0,
+            & main.container__133bf {
+                & section.container__9293f {
+                    /* adds extra spacing to search bar on chatting pages*/
+                    padding-right: calc(var(--vr-header-snippet-space) + 44px);
+                }
+            }
+
+            /* adds extra spacing to the orbs button on orbs/shop page */
+            & div.container__44ee9 {
+                padding-right: +44px;
+            }
+
+            /* adds extra padding to chat icon on vc */
+            .toolbar__49508 {
+                position: fixed;
+                top: 16px;
+                right: calc(var(--vr-header-snippet-space) + 32px);
+            }
+
+            /* checks if you are searching for a server/app */
+            .container_d08938,
+            .innerContainer_e1147e {
+                /* adds padding to search bar */
+                .searchBar__1ac1c {
+                    padding-right: 48px;;
+                }
+
+                /* adds extra badding if you are looking at search results */
+                &:has(.headerBar__8a7fc.relative__8a7fc) {
+                    .searchBar__1ac1c {
+                        padding-right: calc(var(--vr-header-snippet-space) + 32px);
+                    }
+                }
+            }
+        }
+
+        /* checks if user isn't using vencord toolbox plugin */
+        &:not(:has(.vc-toolbox-btn)) {
+            /* adds padding to chat icon in vc */
+            .toolbar__49508 {
+                position: fixed;
+                top: 16px;
+                right: calc(var(--vr-header-snippet-space) - 12px);
+            }
+
+            /* checks if you are searching for a server/app */
+            .container_d08938,
+            .innerContainer_e1147e {
+                /* adds padding to search bar */
+                .searchBar__1ac1c {
+                    padding-right: 4px;
+                }
+
+                /* adds extra badding if you are looking at search results */
+                &:has(.headerBar__8a7fc.relative__8a7fc) {
+                    .searchBar__1ac1c {
+                        padding-right: calc(var(--vr-header-snippet-space) - 12px);
+                    }
+                }
+            }
+        }
+
+        /* moves element to "front" */
+        & > div[class*='content__'] {
+            z-index: 0;
+        }
+
+        /* top bar variables */
         & > div.bar_c38106 {
             position: absolute;
             position-anchor: --vr-header-snippet;
@@ -31,6 +106,7 @@
             width: anchor-size(width);
             padding: 0 var(--vr-header-snippet-button-padding) 0 0;
 
+            /* removes the title bar */
             & > .title_c38106 {
                 display: none;
             }
@@ -42,25 +118,25 @@
             }
         }
 
+        /* inbox and help button variables */
         & div.trailing_c38106 {
             background: none;
             border: none;
             height: var(--custom-channel-header-height);
         }
 
-        & > div[class*='content__'] {
-            z-index: 0;
-        }
-
+        /* checks if a thread is opened on the side of your screen */
         &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
             z-index: 0;
         }
     }
 
+    /* checks if discord is on a server page */
     :not(:has(div[class*='page__'] > div.chat_f75fb0)) div[class*='base_'] > div.bar_c38106 {
         right: 0 !important;
     }
 
+    /* adds padding to shop page if a toolbar is showing (unsure what the toolbar is) */
     .shop__6db1d section.showToolbar__9293f {
         padding-right: var(--vr-header-snippet-space);
 
@@ -82,7 +158,31 @@
         }
     }
 
+    /* adds padding to server list */
     ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
         margin-top: var(--vr-header-snippet-server-padding);
+    }
+
+    /* search/wishlist/orbs on shop page */
+    .alignedRightContent__80679 {
+        position: fixed;
+        right: calc(var(--vr-header-snippet-space) - 33px);
+    }
+
+    /* orbs balance on quests page */
+    .headerBarContent__1a9ce .container__44ee9 {
+        position: fixed;
+        right: calc(var(--vr-header-snippet-space) + 3px);
+    }
+
+    /* fixes extra gap of group dm button on friends page */
+    .toolbar__9293f .inviteToolbar__133bf {
+        padding-right: 0px;
+    }
+
+    /* fixes weird padding issue when searching for an app */
+    .sideFilterContainer__1eae0 {
+        position: fixed;
+        top: 57px;
     }
 }
